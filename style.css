@@ -144,6 +144,7 @@ p{
     color: #E59710;
     font-size: 2rem;
 }
+.nav-list a:link,
 .nav-list a:visited{
     color: #E59710;
 }
@@ -797,6 +798,7 @@ input[type=email]::placeholder{
         justify-content: flex-end;
         background-color: transparent;
     }
+    .nav-list a:link,
     .nav-list a:visited{
         color: #131212;
     }    
