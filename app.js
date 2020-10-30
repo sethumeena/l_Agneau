@@ -1,6 +1,8 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navList = document.querySelector('.nav-list');
 const navLink = document.querySelectorAll('.nav-link')
+const cta = document.querySelectorAll('.cta');
+
 
 evtsArray = ['click','touchstart','touchend']
 
@@ -31,14 +33,20 @@ navLink.forEach((link)=>{
         hamburgerMenu.classList.toggle('rotate');
     })
     })
-const cta = document.querySelector('.cta');
 
-cta.addEventListener('touchstart', ()=>{
-   cta.classList.add('cta-touch-hover');
-})
-cta.addEventListener('touchend', ()=>{
-    cta.classList.remove('cta-touch-hover');
-})
+for (let button of cta ){
+    console.log(button)
+    button.addEventListener('touchstart', ()=>{
+        button.classList.add('cta-touch-hover');
+     })
+}
+for (let button of cta ){
+    button.addEventListener('touchend', ()=>{
+        button.classList.remove('cta-touch-hover');
+     })
+}
+
+
 
 
     

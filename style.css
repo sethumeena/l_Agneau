@@ -21,6 +21,9 @@ img{
 p{
     font-size:  1.6rem;
 }
+a:link, a:visited{
+    color: white;
+}
 
 /* nav-bar */
 #nav-bar{
@@ -631,6 +634,7 @@ padding-left: .5rem;
     display: flex;
     margin-bottom: 1rem;  
 }
+
 .subscribe-container{
     padding-top: 2rem;
 }
