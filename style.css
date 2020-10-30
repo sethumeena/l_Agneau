@@ -85,22 +85,36 @@ p{
     pointer-events: none;
 
 }
-.hamburger-menu:hover{
-    cursor: pointer;
-}
-.hamburger-menu:hover .bar-one, .hamburger-menu.rotate .bar-one{
+.touch-hover:hover .bar-one, .hamburger-menu.rotate .bar-one{
     top: 50%;
     position: absolute;
     transform: translateY(-50%);   
 }
-.hamburger-menu:hover .bar-two,.hamburger-menu.rotate .bar-two{
-   
+.touch-hover:hover .bar-two,.hamburger-menu.rotate .bar-two{
     transform: rotate(90deg);
 }
-.hamburger-menu:hover .bar-three, .hamburger-menu.rotate .bar-three{
+.touch-hover:hover .bar-three, .hamburger-menu.rotate .bar-three{
     bottom: 50%;
     position: absolute;
     transform: translateY(50%); 
+}
+@media screen and (min-device-width:991px){
+    .hamburger-menu:hover{
+        cursor: pointer;
+    }
+    .hamburger-menu:hover .bar-one, .hamburger-menu.rotate .bar-one{
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);   
+    }
+    .hamburger-menu:hover .bar-two,.hamburger-menu.rotate .bar-two{
+        transform: rotate(90deg);
+    }
+    .hamburger-menu:hover .bar-three, .hamburger-menu.rotate .bar-three{
+        bottom: 50%;
+        position: absolute;
+        transform: translateY(50%); 
+    }
 }
 .rotate{
     transform: rotate(45deg);  
@@ -159,8 +173,7 @@ p{
     height: 100%;
     z-index: 3;
     position: absolute; 
-    top:10%;
-   
+    top:10%; 
 }
 .left-heading,
 .right-heading{
@@ -201,7 +214,14 @@ p{
 .right-arrow{
 padding-left: .5rem;
 }
-.cta:hover{
+@media screen and (min-device-width:991px){
+    .cta:hover{
+        cursor: pointer;
+        background-color: #F2B140;
+        transform: skew(-10deg) scale(1.1);
+    }
+}
+.cta-touch-hover:hover {  
     cursor: pointer;
     background-color: #F2B140;
     transform: skew(-10deg) scale(1.1);
